@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | resolver.com</title>
+</head>
+<body>
+    <h1>Welcome to the website.</h1>
+    <form action="{%url 'create_url'%}" method="post">
+        <input type="url" name='url' placeholder="paste your url here...">
+        <input type="submit" value="Create">
+    </form>
+    {% if short_url %}
+        <a href="/{{short_url}}/">short_url: <strong>{{short_url}}</strong></a>
+    {% endif %}
+</body>
+</html>
