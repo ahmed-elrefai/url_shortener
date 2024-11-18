@@ -10,7 +10,7 @@ minimum requirements:
 3. an endpoint that receives the shortened url resolves it, so you are redirected to that page.
 
 in backend words that's:
-1 Model
+1 Model (UrlInfo)
 3 Views (1 homepage + 1 create + 1 get & get all)
 3 endpoints, one for each of those views.
 
